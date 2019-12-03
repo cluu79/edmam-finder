@@ -1,22 +1,13 @@
-.App {
-  text-align: center;
+body{
+  font-family: 'Open Sans', sans-serif!important;
+}
+.text-slanted{
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
+.text-orange{
+  color:#f15025;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
+.letter-spacing{
+  letter-spacing: 0.5rem;
 }
