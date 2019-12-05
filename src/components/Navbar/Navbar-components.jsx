@@ -1,12 +1,13 @@
 import React from 'react';
 import logo from '../../images/logo.svg';
+import './Navbar-styles.scss'
 import {Link} from 'react-router-dom'
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-sm navbar-light bg-light">
       <Link to='/' className="navbar-brand">
-        <img src={logo} alt="logo"/>
+        <img className="nav-logo" src={logo} alt="logo"/>
       </Link>
       <div className="collapse navbar-collapse show ml-sm-5">
         <ul className="navbar-nav">

@@ -8,6 +8,7 @@ import SingleRecipe from './pages/SingleRecipe-pages';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar-components'
 
+
 class App extends Component {
   render() {
     return (
