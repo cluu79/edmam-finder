@@ -1,12 +1,39 @@
 import React, { Component } from 'react'
+import RecipeList from '../components/Recipe-List/RecipeList-component'
+import Search from '../components/Search/Search-component'
+import {recipeData} from '../tempData/reciplist-temp'
 
 export default class Recipes extends Component {
+  constructor(props) {
+    super(props)
+  }
+  state = {
+    recipes: recipeData,
+    search: ''
+  }
+  handleChange = (e) => {
+    this.setState({
+      search: e.target.value
+    })
+  }
+
+  handleSubmit = (e) => {
+    e.preventDefault()
+  }
+
+
+
   render() {
     return (
-      <h4 className="text-warning">
-        hello from Recipes
+      <>
         
-      </h4>
+        <Search search={this.state.search} handleChange={this.handleChange} handleSubmit={this.handleSubmit} />
+        <RecipeList recipes={this.state.recipes} />
+      </>
     )
+
+
+      
+    
   }
 }
